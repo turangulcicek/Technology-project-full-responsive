@@ -3,8 +3,9 @@ $gray: rgb(61, 59, 59);
 $black: rgba(0, 0, 0, 0.897);
 $white: rgb(255, 254, 254);
 
-body{
-  overflow-x: hidden ; /* yatay scrollu kaldırır */
+body {
+  overflow-x: hidden; /* yatay scrollu kaldırır */
+  background-color: #141214 !important;
 }
 
 .navbar {
@@ -27,7 +28,6 @@ body{
   background-attachment: fixed;
 
   .Welcome-text {
-    
     width: 500px;
     color: white;
     text-align: center;
@@ -38,21 +38,19 @@ body{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    
 
-    button:first-of-type{
+    button:first-of-type {
       background-color: $green;
     }
-    .welcome-text-buttons{
+    .welcome-text-buttons {
       border-radius: 10px;
       margin-left: 10px;
       padding: 5px 10px;
-      &:hover{
+      &:hover {
         transform: scale(90%);
-        transition: ease all .3s;
+        transition: ease all 0.3s;
         box-shadow: 0px 0px 10px white;
       }
-      
     }
 
     h1 {
@@ -65,13 +63,12 @@ body{
 
 // Windows Section
 
-.widnows-section{
+.widnows-section {
   display: flex;
   height: 80vh;
-  
-  
+
   background-color: #141214;
-  .left-section{
+  .left-section {
     width: 700px;
     padding: 100px;
     display: flex;
@@ -79,179 +76,176 @@ body{
     gap: 30px;
     color: $white;
 
-    button{
+    button {
       padding: 20px;
       border-radius: 20px;
       background-color: white;
-      &:hover{
+      &:hover {
         transform: scale(95%);
-        transition: ease all .3s;
+        transition: ease all 0.3s;
         box-shadow: 0px 0px 10px white;
       }
     }
   }
 }
-  .right-section{
-    background-color: #141214;
-    padding: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    
-    
-    .windows{
-      width: 200px;
-      margin-right: 10px;
-      background-image: url(images/sec2.jpg);
-      background-size: cover;
-      border-radius: 30px 30px 0px 0px;
-      background-attachment: fixed;
-     &:nth-of-type(2){
-      border-radius: 30px;
-     }
-      
-    }
-  }
-  
-// java section
-.javasection{
+.right-section {
   background-color: #141214;
   padding: 100px;
-  .upper_section{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+  .windows {
+    width: 200px;
+    margin-right: 10px;
+    background-image: url(images/sec2.jpg);
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    background-attachment: fixed;
+    &:nth-of-type(2) {
+      border-radius: 30px;
+    }
+  }
+}
+
+// java section
+.javasection {
+  background-color: #141214;
+  padding: 100px;
+  .upper_section {
     color: white;
     width: 50%;
-    h3{
+    h3 {
       margin-bottom: 30px;
     }
-    p{
+    p {
       color: gray;
     }
-
   }
 
-  .cards_section{
+  .cards_section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     justify-content: space-between;
     background-color: #141214;
-    
-    .card{
+
+    .card {
       padding: 20px;
       background-color: #141214;
       color: white;
       border: 1px solid gray;
-      &:nth-of-type(3){
+      &:nth-of-type(3) {
         padding-top: 30px;
       }
-    
-      video{
+
+      video {
         width: 200px;
-        
       }
     }
-}
+  }
 }
 // list section
 
-.list-section{
+.list-section {
   color: white;
-  background-color:#141214;
+  background-color: #141214;
   display: flex;
   flex-direction: column;
   padding: 100px;
 
-.list-text{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.list-items{
-  padding: 30px 0px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid gray;
-  img{
-    width: 50px;
+  .list-text {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 40px;
+    margin-bottom: 50px;
   }
-  span{
-    color: $gray;
+
+  .list-items {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+    img {
+      width: 50px;
+      align-items: center;
+      padding-bottom: 40px;
+    }
+    span {
+      color: $gray;
+    }
   }
 }
+
+// Projects section about part
+// about text
+.about_section {
+  .px-5 {
+    background-color: transparent !important;
+  }
+  .col {
+    background-color: rgb(45, 44, 44);
+    border-radius: 30px;
+    margin-right: 150px !important;
+    margin-bottom: 200px;
+    img {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: -50px;
+    }
+  }
+  .about-text {
+    background-color: #141214;
+    max-width: 1000px;
+    font-size: 44px !important;
+    font-weight: 800;
+    margin: 100px 0px;
+
+    p {
+      background: -webkit-linear-gradient(#08e1c4 30%, #06d36cb0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-left: 42px;
+    }
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// /about section
+
+// Project section
+.container-fluid {
+  .projects {
+    margin-bottom: 200px;
+   
+    .each-project {
+      .left {
+        padding: 50px 50px 0px 50px;
+        position: relative;
+        background-color: rgb(60, 60, 60);
+        i{
+          position: absolute;
+          color: white;
+          font-size: 20px;
+          top: 3px;
+          right: 3px;
+          padding: 10px;
+          background-color: gray;
+          border-radius: 5px;
+        }
+        &:hover {
+          background-color: #fa8bff;
+          background-image: linear-gradient(
+            45deg,
+            #fa8bff 0%,
+            #2bd2ff 52%,
+            #2bff88 90%
+          );
+        }
+      }
+    }
+  }
+}
 
 // Footer
 .footer {
@@ -290,4 +284,3 @@ body{
     }
   }
 }
-
